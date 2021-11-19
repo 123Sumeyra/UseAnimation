@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="baslik">Mobiler Dev</string>
+
+    <string name="icerik">Mobiler.dev mobil teknolojiler konusunda araştırmayı seven,
+        inovasyon ve yeni trendleri takip edip deneyimlemek isteyen ve deneyimlerini
+        mobil yazılıma ilgi duyan herkesle paylaşmak isteyen, kar amacı bulunmayan
+        mobil yazılım platformu ve topluluğudur.
+        Mobiler.dev mobil teknolojiler konusunda araştırmayı seven,
+        inovasyon ve yeni trendleri takip edip deneyimlemek isteyen ve deneyimlerini
+        mobil yazılıma ilgi duyan herkesle paylaşmak isteyen, kar amacı bulunmayan
+        mobil yazılım platformu ve topluluğudur.</string>
+
+</resources>
