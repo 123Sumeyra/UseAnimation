@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.sumeyra.animation3.databinding.FragmentFirstBinding
+import com.sumeyra.animation3.databinding.FragmentSecondBinding
 
 
 class SecondFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var binding :FragmentSecondBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,16 +25,20 @@ class SecondFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
+        binding = FragmentSecondBinding.inflate(LayoutInflater.from(requireContext()), container, false)
+        return binding.root
 
-        val view = inflater.inflate(R.layout.fragment_second, container, false)
 
-        val button =view.findViewById<Button>(R.id.btn_secondFragment)
-        button.setOnClickListener {
-            findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        binding.btnSecondFragment.setOnClickListener {
+            val direction = SecondFragmentDirections.actionSecondFragmentToThirdFragment()
+            findNavController().navigate(direction)
         }
-
-
-        return view
     }
 
 

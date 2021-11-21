@@ -5,12 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.sumeyra.animation3.databinding.FragmentFirstBinding
 
 
 class FirstFragment : Fragment() {
+    private lateinit var binding : FragmentFirstBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,17 +23,22 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-         val view = inflater.inflate(R.layout.fragment_first, container, false)
+        binding = FragmentFirstBinding.inflate(LayoutInflater.from(requireContext()), container, false)
+        return binding.root
 
-        val button =view.findViewById<Button>(R.id.btn_firstFragment)
-        button.setOnClickListener {
-            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+
+
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        binding.btnFirstFragment.setOnClickListener {
+            val direction = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
+            findNavController().navigate(direction)
         }
-
-
-        return view
-
-
     }
 
 
