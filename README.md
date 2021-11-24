@@ -13,6 +13,9 @@ In this project using <b>lottie</b>
 
 
 <h1 align="center"> Splash Screen Animation:eyes:</h1>
+<p align = "center">
+ We will learn to use Translate Animation in Android
+  </p>
 
 
 <h1 align="center">:eyes: Animation3</h1>
