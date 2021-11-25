@@ -40,5 +40,13 @@ We will learn  how to do  slide animation between fragments. Ofcourse We use nav
 
 </p>
 
+   <div align="center">
+ <tr>
+    <td >
+      <img src="https://github.com/123Sumeyra/UseAnimation/blob/master/ss/anime3.gif"/>
+    </td>
+ </tr>
+ </div>
+
 
 
