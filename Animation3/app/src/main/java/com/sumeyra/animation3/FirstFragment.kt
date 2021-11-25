@@ -37,7 +37,8 @@ class FirstFragment : Fragment() {
 
         binding.btnFirstFragment.setOnClickListener {
             val direction = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
-            findNavController().navigate(direction)
+            findNavController()
+                .navigate(direction)
         }
     }
 

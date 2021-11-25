@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ThirdFragment"
     android:padding="10dp"
+    android:background="@color/white"
     tools:ignore="ExtraText">
 
 
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="Third Fragment"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

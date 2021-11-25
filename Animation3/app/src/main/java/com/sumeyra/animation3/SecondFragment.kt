@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
-import com.sumeyra.animation3.databinding.FragmentFirstBinding
 import com.sumeyra.animation3.databinding.FragmentSecondBinding
 
 
@@ -39,6 +38,18 @@ class SecondFragment : Fragment() {
             val direction = SecondFragmentDirections.actionSecondFragmentToThirdFragment()
             findNavController().navigate(direction)
         }
+        binding.btnSecondBack.setOnClickListener {
+            val direction = SecondFragmentDirections.actionSecondFragmentToFirstFragment()
+            findNavController().navigate(direction)
+        }
+
+
+
+
+
+
+
+
     }
 
 
