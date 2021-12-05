@@ -36,7 +36,7 @@
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 android:visibility="visible"
-                app:lottie_rawRes="@raw/welcome_plants" />
+                app:lottie_fileName="welcome_plants.json" />
 
 
                 tools:ignore="MissingClass" />
